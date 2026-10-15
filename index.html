@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Master Barber Shop | Barbería en Ñuñoa</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & FontAwesome para iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Canvas para Partículas Interactivas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">TEAM MASTER<span>BARBER SHOP</span></a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#barberos" class="nav-link">Barberos</a>
+                <a href="#testimonios" class="nav-link">Reseñas</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#ubicacion" class="nav-link">Ubicación</a>
+                <a href="https://wa.me/56964471016?text=Hola,%20me%20gustaria%20reservar%20una%20cita" target="_blank" class="btn-nav">Reservar Cita</a>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge reveal"><i class="fas fa-star"></i> Calificación 5.0 en Google Maps</span>
+            <h1 class="reveal">ESTILO, PRECISIÓN Y CLASE EN ÑUÑOA</h1>
+            <p class="reveal">Los mejores barberos de Santiago te esperan con un ambiente cómodo, excelente música y asesoría personalizada.</p>
+            <div class="hero-buttons reveal">
+                <a href="https://wa.me/56964471016?text=Hola,%20quiero%20aprovechar%20el%2015%25%20de%20descuento%20de%20bienvenida" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Reservar con 15% OFF</a>
+                <a href="#servicios" class="btn btn-secondary">Ver Servicios</a>
+            </div>
+            <!-- Botones flotantes de redes sociales rápidos -->
+            <div class="hero-social-bar reveal">
+                <a href="https://instagram.com" target="_blank" class="social-pill"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://wa.me/56964471016" target="_blank" class="social-pill"><i class="fab fa-whatsapp"></i> WhatsApp Directo</a>
+                <a href="https://maps.app.goo.gl/TuEnlaceGoogleMaps" target="_blank" class="social-pill"><i class="fas fa-map-marker-alt"></i> Reseñas Google</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Nuestros Servicios</h2>
+                <p>Cortes modernos, clásicos, barba y cuidado personal adaptados a tu estilo.</p>
+            </div>
+            
+            <!-- Aviso de la oferta integrado debajo del título de servicios -->
+            <div class="service-promo-alert reveal">
+                <i class="fas fa-gift"></i> <span>¿Vienes por primera vez? Menciona esta página web al reservar por WhatsApp y obtén un <strong>15% de descuento</strong> en cualquiera de nuestros servicios.</span>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-cut"></i></div>
+                    <h3>Corte Clásico o Moderno</h3>
+                    <p>Fade, taper fade, pompadour o el estilo que prefieras con asesoría profesional.</p>
+                    <span class="price">$10.000</span>
+                    <a href="https://wa.me/56964471016?text=Hola,%20quiero%20reservar%20para%20Corte%20Clásico/Moderno%20con%20el%2015%%20de%20descuento" target="_blank" class="btn-card">Reservar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Corte + Barba Completa</h3>
+                    <p>Perfilado de barba con toalla caliente, navaja y acabado impecable.</p>
+                    <span class="price">$15.000</span>
+                    <a href="https://wa.me/56964471016?text=Hola,%20quiero%20reservar%20para%20Corte%20+%20Barba%20con%20el%2015%%20de%20descuento" target="_blank" class="btn-card">Reservar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-child"></i></div>
+                    <h3>Corte de Niños</h3>
+                    <p>Paciencia, buen trato y un look genial para los más pequeños del hogar.</p>
+                    <span class="price">$9.000</span>
+                    <a href="https://wa.me/56964471016?text=Hola,%20quiero%20reservar%20para%20Corte%20de%20Niños%20con%20el%2015%%20de%20descuento" target="_blank" class="btn-card">Reservar <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Equipo de Barberos -->
+    <section id="barberos" class="team section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Nuestros Barberos</h2>
+                <p>Elige a tu profesional de confianza y agenda directamente con él.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card reveal">
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Barbero 1">
+                    </div>
+                    <h3>Barbero 1</h3>
+                    <span class="role">Especialista en Skin Fade & Estilo Urbano</span>
+                    <a href="https://wa.me/56964471016?text=Hola,%20me%20gustaria%20reservar%20con%20Barbero%201" target="_blank" class="btn-card">Reservar con Barbero 1 <i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Barbero 2">
+                    </div>
+                    <h3>Barbero 2</h3>
+                    <span class="role">Master en Barba & Cortes Clásicos</span>
+                    <a href="https://wa.me/56964471016?text=Hola,%20me%20gustaria%20reservar%20con%20Barbero%202" target="_blank" class="btn-card">Reservar con Barbero 2 <i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Barbero 3">
+                    </div>
+                    <h3>Barbero 3</h3>
+                    <span class="role">Asesoría de Imagen & Perfilado Navaja</span>
+                    <a href="https://wa.me/56964471016?text=Hola,%20me%20gustaria%20reservar%20con%20Barbero%203" target="_blank" class="btn-card">Reservar con Barbero 3 <i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios de Google Maps -->
+    <section id="testimonios" class="testimonials section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <p>Opiniones reales extraídas directamente de nuestro perfil de Google Maps.</p>
+            </div>
+            <div class="testimonials-slider reveal">
+                <div class="testimonial-card active">
+                    <div class="testimonial-header">
+                        <i class="fab fa-google google-icon"></i>
+                        <div>
+                            <h4>Cristián Morales</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Excelente atención de los cabros. La técnica de degrade e higienización impecable. El ambiente súper grato y buena música en Ñuñoa."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fab fa-google google-icon"></i>
+                        <div>
+                            <h4>Ignacio Silva</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Llevo viniendo meses y nunca defraudan. Puntuales con las horas agendadas por WhatsApp y el corte de barba queda perfecto."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fab fa-google google-icon"></i>
+                        <div>
+                            <h4>Felipe Arancibia</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Muy buen ambiente, te ofrecen un café o agua mientras esperas. El profesionalismo de los barberos se nota desde el minuto uno."</p>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="setTestimonial(0)"></span>
+                <span class="dot" onclick="setTestimonial(1)"></span>
+                <span class="dot" onclick="setTestimonial(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros / Reseñas -->
+    <section id="nosotros" class="about section">
+        <div class="container about-grid">
+            <div class="about-text reveal">
+                <h2>¿Por qué elegirnos?</h2>
+                <p>En <strong>Team Master Barber Shop</strong> nos destacamos por ofrecer una atención cercana y detallista. Contamos con un ambiente climatizado, volumen de música moderado y profesionales apasionados por la barbería.</p>
+                <div class="features-list">
+                    <div class="feature-item"><i class="fas fa-check-circle"></i> Asesoría de imagen personalizada</div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i> Ubicación céntrica y fácil acceso en Ñuñoa</div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i> Excelente ambiente y atención de primera</div>
+                </div>
+            </div>
+            <div class="about-card-review reveal">
+                <div class="google-badge-box">
+                    <i class="fab fa-google"></i>
+                    <div>
+                        <h4>Excelente Reputación</h4>
+                        <div class="stars">★★★★★</div>
+                        <p>Basado en opiniones reales de nuestros clientes en Ñuñoa[cite: 1, 2].</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes (FAQ) -->
+    <section id="faq" class="faq section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Resolvemos tus dudas antes de agendar tu visita.</p>
+            </div>
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <button class="faq-question">¿Es obligatorio agendar hora previa? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Recomendamos agendar vía WhatsApp para asegurar tu cupo y no hacerte esperar. Sin embargo, si tenemos disponibilidad al momento, te atenderemos con gusto de inmediato.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué medios de pago aceptan? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Aceptamos efectivo, tarjetas de débito, crédito y transferencia bancaria directa.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Cómo aplico la promoción del 15% de descuento? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Simplemente menciona o envía una captura indicando que vienes desde nuestro sitio web al momento de coordinar tu cita por WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Cuentan con estacionamiento? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Sí, nos encontramos en una zona comercial de fácil acceso sobre Av. José Pedro Alessandri con opciones de estacionamiento cercano[cite: 1, 2].</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación y Horarios -->
+    <section id="ubicacion" class="location section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Encuéntranos</h2>
+                <p>Visítanos en nuestro local o contáctanos directamente.</p>
+            </div>
+            <div class="location-grid reveal">
+                <div class="info-box">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Av. José Pedro Alessandri 1535, Lc 6, Ñuñoa, Región Metropolitana[cite: 1, 2]</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Teléfono / WhatsApp</h4>
+                            <p>+56 9 6447 1016[cite: 2]</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lunes a Sábado: 10:00 hrs – 20:00 hrs</p>
+                        </div>
+                    </div>
+                    <a href="https://maps.app.goo.gl/TuEnlaceGoogleMaps" target="_blank" class="btn btn-primary" style="margin-top: 15px; display: inline-block; text-align: center;"><i class="fas fa-directions"></i> Cómo Llegar en Google Maps</a>
+                </div>
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.172159048386!2d-70.59737!3d-33.4563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf001234567%3A0x123456789abcdef!2sAv.+Jos%C3%B+Pedro+Alessandri+1535%2C+7750000+%C3%91u%C3%B1oa%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1650000000000!5m2!1ses!2scl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-content reveal">
+            <a href="#" class="logo">TEAM MASTER<span>BARBER SHOP</span></a>
+            <p>El punto de encuentro para quienes buscan perfección en cada corte.</p>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/56964471016" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://maps.app.goo.gl/TuEnlaceGoogleMaps" target="_blank" title="Google Maps"><i class="fas fa-map-marked-alt"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Team Master Barber Shop. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Barra Flotante de Cita Rápida Móvil -->
+    <div class="mobile-sticky-bar">
+        <a href="https://wa.me/56964471016?text=Hola,%20quiero%20reservar%20una%20cita%20rapida" target="_blank" class="btn btn-primary btn-sticky">
+            <i class="fab fa-whatsapp"></i> Reservar Cita Rápida
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
